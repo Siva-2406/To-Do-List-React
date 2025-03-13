@@ -31,7 +31,7 @@ const App = () => {
         setQuote(randomQuote);
     }, []);
 
-    // Save tasks to local storage whenever they change
+    
     useEffect(() => {
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }, [tasks]);
